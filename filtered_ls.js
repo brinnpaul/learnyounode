@@ -1,8 +1,8 @@
 var fs = require("fs");
 var path = require("path");
-
-dir = process.argv[2];
-ext = '.' + process.argv[3];
+// this is small but an important habit, don't forget your 'var' keyword when delcaring a variable.
+var dir = process.argv[2];
+var ext = '.' + process.argv[3];
 
 var filter = fs.readdir(dir, function(error, files) {
   if (error) {
